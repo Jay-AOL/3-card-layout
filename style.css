@@ -1,0 +1,129 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+}
+
+.sedans{
+  background-color: hsl(31, 77%, 52%);
+}
+.suvs{
+  background-color: hsl(184, 100%, 22%);
+}
+.luxury{
+  background-color: hsl(179, 100%, 13%);
+  }
+
+.head{
+  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 3rem;
+}
+
+.para{
+  font-family: 'Lexend Deca', sans-serif;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.button{
+  color: hsl(0, 0%, 95%);
+  text-align: center;
+  padding: 12px 30px;
+  border-radius: 28px;
+  border-color: hsl(0, 0%, 95%);
+  border-style: solid;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+#button-sedans{
+  background-color: hsl(31, 77%, 52%);
+}
+#button-suvs{
+  background-color: hsl(184, 100%, 22%);
+}
+#button-luxury{
+  background-color: hsl(179, 100%, 13%);
+}
+#button-sedans:hover{
+  color: hsl(31, 77%, 52%);
+  background-color: white;
+}
+#button-suvs:hover{
+  color: hsl(184, 100%, 22%);
+  background-color: white;
+}
+#button-luxury:hover{
+  color: hsl(179, 100%, 13%);
+  background-color: white;
+}
+
+@media screen and (min-width: 701px) {
+  body{
+    margin: 7.5% 12.5%;
+  }
+  .sedans, .suvs, .luxury{
+    width: 33.33%;
+    padding: 50px 65px 50px 50px;
+  }
+  .sedans{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .luxury{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .para{
+    padding: 20px 0 100px 0;
+    font-size: 0.9375rem;
+    line-height: 2;
+    letter-spacing: 0.1rem;
+  }
+  .button{
+    font-size: 125%;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body{
+    margin: 75px 35px;
+  }
+  .container{
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  .sedans, .suvs, .luxury{
+    height: 33.33%;
+    padding: 25px 30px 25px 25px;
+  }
+  .sedans{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .luxury{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .head{
+    font-size: 2.5rem;
+  }
+  .para{
+    padding: 17.5px 0 30px 0;
+    font-size: 0.9375rem;
+    line-height: 2;
+    margin-bottom: 0;
+  }
+  .button{
+    margin: 20px 20px 20px 0;
+    font-size: 100%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .button{
+    font-size: 75%;
+  }
+}
